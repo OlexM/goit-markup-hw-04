@@ -1,0 +1,339 @@
+/* =========RESET=========== */
+a {
+  text-decoration: none;
+  display: block;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+/* ===========STYLES===================== */
+body {
+  font-family: "Roboto", "FF DIN", sans-serif;
+  color: var(--body-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+:root {
+  --body-color: #434455;
+  --navy-blue: #2e2f42;
+  --white: #ffffff;
+  --ocean: #404bbf;
+  --iris: #4d5ae5;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+}
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid red; */
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/* --------HEADER--------- */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cornflower);
+}
+.header-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.logo-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: var(--iris);
+  text-transform: uppercase;
+}
+.logo-text-right {
+  color: var(--navy-blue);
+}
+.nav {
+  display: flex;
+  gap: 76px;
+  flex-grow: 1;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+.nav-item-text {
+  font-weight: 500;
+  color: var(--navy-blue);
+}
+.nav-item-text:hover {
+  color: var(--ocean);
+}
+.nav-item-text:focus {
+  color: var(--ocean);
+}
+.nav-item-text:active,
+.active {
+  color: var(--ocean);
+  border-bottom: 4px solid var(--ocean);
+  border-radius: 2px;
+}
+.address {
+  flex-grow: 1;
+}
+.address-list {
+  font-style: normal;
+  display: flex;
+  gap: 40px;
+  justify-content: end;
+}
+.mail-link:hover {
+  color: var(--ocean);
+}
+.mail-link:focus {
+  color: var(--ocean);
+}
+.address-item-text {
+  color: var(--body-color);
+}
+
+/* --------HERO--------- */
+.section-hero {
+  background-color: var(--navy-blue);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-title {
+  width: 496px;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 48px;
+}
+.hero-btn {
+  background-color: var(--iris);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: block;
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+}
+.hero-btn:hover {
+  background-color: var(--ocean);
+}
+/* --------OUR FEATURES--------- */
+
+.features-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.features-item {
+  width: 264px;
+}
+.features-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+.features-text {
+}
+/* --------DOING--------- */
+.section-doing {
+  padding-top: 0;
+}
+.doing {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.doing-title {
+  width: 323px;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--navy-blue);
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.doing-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.doing-image {
+  border: 1px solid var(--cornflower);
+  display: block;
+}
+/* --------TEAM--------- */
+.section-team {
+  background-color: var(--cloud);
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.team-title {
+  width: 162px;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--navy-blue);
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 32px;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--navy-blue);
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+/* --------FOOTER--------- */
+.footer {
+  background-color: var(--navy-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-logo {
+}
+.footer-text {
+  color: var(--cornflower);
+  width: 264px;
+  margin-top: 16px;
+}
+.f-logo-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--iris);
+  text-transform: uppercase;
+}
+.f-logo-text-right {
+  color: var(--cloud);
+}
+/* --------HIDDEN--------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* --------PORTFOLIO--------- */
+/* --------FILTERS--------- */
+.portfolio {
+  padding-top: 96px;
+}
+.filters-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 72px;
+}
+.filters-btn {
+  font-family: "Roboto", "FF DIN", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris);
+  background-color: var(--cloud);
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+.filters-btn:hover {
+  background-color: var(--ocean);
+  color: var(--white);
+}
+.filters-btn:focus {
+  background-color: var(--ocean);
+  color: var(--white);
+}
+/* --------EXAMPLES--------- */
+
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  column-gap: 24px;
+  justify-content: center;
+}
+.examples-item {
+}
+.examples-link {
+  display: block;
+}
+.card-bottom {
+  padding: 32px 16px;
+  border-bottom: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+}
+.examples-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--navy-blue);
+  padding-bottom: 8px;
+}
+.examples-text {
+  color: var(--body-color);
+}
